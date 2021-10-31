@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,400&family=Roboto:ital,wght@0,100;1,100;1,700&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #5e6c58;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow:hidden;
+    flex-direction: column;
+}
+
+.user-form {
+    width: 100%;
+    max-width: 700px;
+}
+.user-form input {
+    width: 100%;
+    display: block;
+    background-color: #100f10;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+}
+.user-form input:focus{
+    outline: none;
+}
+.user-form input::placeholder{
+    color: #bbb;
+}
+
+.card {
+    max-width: 800px;
+    background-color: #cfccd5;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+    color: #333333;
+}
+.avatar {
+    border-radius: 50%;
+    border: 10px solid #cfccd5;
+    height: 150px;
+    width: 150px;
+}
+.user-info {
+    color: #333333;
+    margin-left: 2rem;
+}
+.user-info h2 {
+    margin-top: 0;
+}
+.user-info ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+}
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+.user-info ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo{
+    text-decoration: none;
+  color: #fff;
+  background-color: #212a72;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media(max-width: 500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-form {
+        max-width: 400px;
+    }
+}
